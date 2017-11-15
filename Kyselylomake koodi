@@ -60,12 +60,8 @@
 });
 } 
 document.getElementById("lomake").innerHTML = text;
-
-	// alert koodi idea alert(etunimi+" on "+sukupuoli+" ja harrastaa "+harrastan)
 </script>
 
-<script> $.getJSON( "kysely.json", function( data ) {
-});
 </script>
 
 </body>
