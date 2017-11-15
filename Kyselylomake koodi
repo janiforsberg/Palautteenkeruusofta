@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<form>
+<h1>Kysely</h1> <hr/>
+	Etunimi: 
+	<input type="text" name="etunimi"><hr />
+	
+	Sukupuoli: <br>
+	<input type="radio" name="sukupuoli" value="mies" checked> Mies <br>
+	<input type="radio" name="sukupuoli" value="nainen"> Nainen <br>
+	<input type="radio" name="sukupuoli" value="muu"> Muu <hr />
+	
+	Harrastan...: <br>
+	<input type="checkbox" name="harrastus1" value="jalkapallo"> jalkapalloa <br>
+	<input type="checkbox" name="harrastus2" value="jaakiekko"> jääkiekkoa <br>
+	<input type="checkbox" name="harrastus3" value="salibandy"> salibandya <br>
+	<input type="checkbox" name="harrastus4" value="pesapallo"> pesäpalloa <hr />
+	
+	<input type="submit" value="Lähetä" onclick="laheta()">
+	<div id="lomake"></div>
+</form>
+
+<script type="text/javascript">
+// !HOX! ei pysty testaamaan, Citrix (VDI) ei vastaa
+	$.getJSON( "kysely.json", function( data ) {
+	var items = [];
+});
+		$.each( data, function( key, d ) {
+	    items.push( "<li> etunimi: " + d.kysymysteksti + "<br>");
+});
+	 $( "<div/>", {
+	   "class": "my-new-list",
+	    html: items.join( "" )
+   }).appendTo( "#lomake" );
+});
+		if (d.type=="text"){ 
+		greeting = "testi";
+		else greeting = "testi2";
+}
+		for (i = 0; i < d.value.length; i++) {
+		text += sukupuoli[i] + "<br>";
+}
+	function laheta() {
+		var etunimi = document.getElementById("etunimi").value;
+		var sukupuoli = document.querySelector('input[name = "sukupuoli"]:checked').value;
+		var taulukko=[];
+		$("input:checkbox[name=harrastan]:checked").each(function(){
+	       taulukko.push($(this).val());
+		
+});
+} 
+document.getElementById("lomake").innerHTML = text;
+
+	// alert koodi idea alert(etunimi+" on "+sukupuoli+" ja harrastaa "+harrastan)
+</script>
+
+<script> $.getJSON( "kysely.json", function( data ) {
+});
+</script>
+
+</body>
+
+</html>
