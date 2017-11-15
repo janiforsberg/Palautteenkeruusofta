@@ -1,0 +1,17 @@
+[{ 
+	"kysymysteksti": "Etunimi",
+	"type": "text",
+	"name": "etunimi",
+	"value": [""]
+},
+{	"kysymysteksti": "Sukupuoli",
+	"type": "radio",
+	"name": "sukupuoli",
+	"value": ["nainen", "mies", "muu"]
+},
+{	"kysymysteksti": "Harrastan",
+	"type": "checkbox",
+	"name": "harrastan",
+	"value": ["jalkapallo", "jaakiekko", "salibandy"]
+}
+]
