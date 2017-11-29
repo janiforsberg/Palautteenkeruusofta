@@ -4,64 +4,166 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87058258-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-87058258-2');
+</script>
 </head>
 
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <form>
-<h1>Kysely</h1> <hr/>
-	Etunimi: 
-	<input type="text" name="etunimi"><hr />
-	
+<h1>Kysely Helgan jäsenyydestä ja palveluista</h1> <hr/>
+
+    <p>Tämän kyselyn tarkoituksena on kartoittaa Helgan jäsenyyksiä ja tietoisuutta Helgan tarjoamista palveluista.</p>
+    
+    <p>Kyselyn tuloksia hyödynnetään Helgan toiminnan kehittämisessä. Tuloksia ei voi yhdistää yksittäiseen vastaajaan eikä niitä luovuteta ulkopuolisille tahoille.</p><br>
+    
+    <p>Kyselyyn vastaaminen vie noin 5 - 10 minuuttia.</p>
+
+    <h2>Perustiedot</h2>
+    
+    Ikä: <br>
+	<input type="radio" name="ika" value="alle20" checked> Alle 20 <br>
+	<input type="radio" name="ika" value="20-25"> 20 - 25 <br>
+  	<input type="radio" name="ika" value="26-30"> 26 - 30 <br>
+ 	<input type="radio" name="ika" value="31-35"> 31 - 35 <br>
+	<input type="radio" name="ika" value="yli30"> Yli 35 <hr />
+    
 	Sukupuoli: <br>
 	<input type="radio" name="sukupuoli" value="mies" checked> Mies <br>
 	<input type="radio" name="sukupuoli" value="nainen"> Nainen <br>
-	<input type="radio" name="sukupuoli" value="muu"> Muu <hr />
+	<input type="radio" name="sukupuoli" value="muu"> Muu / En halua vastata <hr />
 	
-	Harrastan...: <br>
-	<input type="checkbox" name="harrastus1" value="jalkapallo"> jalkapalloa <br>
-	<input type="checkbox" name="harrastus2" value="jaakiekko"> jääkiekkoa <br>
-	<input type="checkbox" name="harrastus3" value="salibandy"> salibandya <br>
-	<input type="checkbox" name="harrastus4" value="pesapallo"> pesäpalloa <hr />
+    Kampus: <br>
+	<input type="radio" name="kampus" value="pasila" checked> Pasila <br>
+	<input type="radio" name="kampus" value="malmi"> Malmi <br>
+  	<input type="radio" name="kampus" value="haaga"> Haaga <br>
+  	<input type="radio" name="kampus" value="porvoo"> Porvoo <br>
+	<input type="radio" name="kampus" value="vierumaki"> Vierumäki <hr />
+    
+    <h2>Helgan jäsenyys</h2>
+    
+    Oletko Helgan jäsen: <br>
+	<input type="radio" name="jasenyys" value="kylla" checked> Kyllä <br>
+	<input type="radio" name="jasenyys" value="ei"> Ei <hr />
+    
+    Koetko hyötyväsi Helgan palveluista: <br>
+	<input type="radio" name="hyoty" value="kylla" checked> Kyllä <br>
+	<input type="radio" name="hyoty" value="ei"> Ei <hr />
+    
+    <h2>Helgan palvelut</h2>
+    
+    Oletko käyttänyt Helgan edunvalvontapalveluita: <br>
+	<input type="radio" name="ev_kaytto" value="kylla" checked> Kyllä <br>
+	<input type="radio" name="ev_kaytto" value="ei"> Ei <hr />
+    
+    Helgan edunvalvonta tarjoaa apua seuraaviin ongelmiin. <br>
+    Oletko viimeisen vuoden aikana törmännyt johonkin seuraavista ongelmista: <br>
+	<input type="checkbox" name="ev_ongelma" value="laatu"> Opetuksen laatu <br>
+	<input type="checkbox" name="ev_ongelma" value="arviointi"> Kurssi arviointi <br>
+	<input type="checkbox" name="ev_ongelma" value="ristiriita"> Ristiriitatilanne henkilöstön kanssa <br>
+  	<input type="checkbox" name="ev_ongelma" value="tyoharjoittelu"> Työharjoittelu <br>
+  	<input type="checkbox" name="ev_ongelma" value="kuormittavuus"> Opintojen kuormittavuus <br>
+  	<input type="checkbox" name="ev_ongelma" value="lasnaolo"> Läsnäolo / Poissaolo <br>
+	<input type="checkbox" name="ev_ongelma" value="opetusteknologia"> Opetusteknologia <hr />
+    
+    Oletko tietoinen Helgan kerhotoiminta palveluista: <br>
+	<input type="radio" name="kerhotoiminta" value="kylla" checked> Kyllä <br>
+	<input type="radio" name="kerhotoiminta" value="ei"> Ei <hr />
+    
+    Kuinka usein käyt opiskelijatapahtumissa: <br>
+	<input type="radio" name="tapahtumat" value="koskaan" checked> En koskaan <br>
+	<input type="radio" name="tapahtumat" value="harvemmin"> Harvemmin kuin kuukausittain <br>
+  	<input type="radio" name="tapahtumat" value="kuukausittain"> Kuukausittain <br>
+  	<input type="radio" name="tapahtumat" value="viikottain"> Viikottain <br>
+	<input type="radio" name="tapahtumat" value="useammin"> Useammin kuin viikottain <hr />
+    
+    Oletko hyötynyt Helgan tutorointipalveluista: <br>
+	<input type="radio" name="tutorointi" value="ollenkaan" checked> En ollenkaan <br>
+	<input type="radio" name="tutorointi" value="vahan"> Vähän <br>
+  	<input type="radio" name="tutorointi" value="kohtalaisesti"> Kohtalaisesti <br>
+  	<input type="radio" name="tutorointi" value="paljon"> Paljon <br>
+	<input type="radio" name="tutorointi" value="erittain_paljon"> Erittäin paljon <hr />
+	
+    Vapaa palaute: 
+	<input type="text" name="vapaa"><hr />
 	
 	<input type="submit" value="Lähetä" onclick="laheta()">
+	<input type="button" value="Näytä vastaukset">
 	<div id="lomake"></div>
 </form>
 
 <script type="text/javascript">
-// !HOX! ei pysty testaamaan, Citrix (VDI) ei vastaa
-	$.getJSON( "kysely.json", function( data ) {
-	var items = [];
+
+$(document).ready(function(){
+
+var jsonData = {"kymysId":"1234", "vastaus":"23"};
+/* alert */
+var myJSON = JSON.stringify(jsonData);
+
+/*POST  testi*/
+$("laheta()").click(function(){
+    
+	$.ajax({
+    url: 'https://www.mocky.io/v2/5185415ba171ea3a00704eed',
+    type: 'POST',
+    dataType: 'json',
+    data: jsonData, 
+    success: function() { alert('POST completed. Data:' + myJSON)}
 });
-		$.each( data, function( key, d ) {
-	    items.push( "<li> etunimi: " + d.kysymysteksti + "<br>");
+	
+}); 
+
+
 });
-	 $( "<div/>", {
-	   "class": "my-new-list",
-	    html: items.join( "" )
-   }).appendTo( "#lomake" );
+/* GET  testi */
+
+/* {{"Kysymys" : "Kuinka vanha olet?",
+"Tyyppi": "radio",
+"Vastaukset": ["alle20","20-25","26-30","31-35","yli35",];
+} }
+*/
+
+$(document).ready(function(){
+
+$("button").click(function(){
+    $.getJSON("https://www.mocky.io/v2/5185415ba171ea3a00704eed", function(result){
+        $.each(result, function(i, field){
+            $("div").append(field + "<br>");
+        });
+    });
+}); 
+
+
 });
-		if (d.type=="text"){ 
-		greeting = "testi";
-		else greeting = "testi2";
-}
-		for (i = 0; i < d.value.length; i++) {
-		text += sukupuoli[i] + "<br>";
-}
+
+/* normi, mockyn sijasta testina "kysely.json" */
+	$.getJSON( "https://www.mocky.io/v2/5185415ba171ea3a00704eed", function( data ) {
+	});
 	function laheta() {
-		var etunimi = document.getElementById("etunimi").value;
+		var ika = document.querySelector('input[name= "ika"]:checked').value;
 		var sukupuoli = document.querySelector('input[name = "sukupuoli"]:checked').value;
+        var kampus = document.querySelector('input[name= "kampus"]:checked').value;
+        var jasenyys = document.querySelector('input[name= "jasenyys"]:checked').value;
+        var hyoty = document.querySelector('input[name= "hyoty"]:checked').value;
+        var ev_kaytto = document.querySelector('input[name= "ev_kaytto"]:checked').value;
 		var taulukko=[];
-		$("input:checkbox[name=harrastan]:checked").each(function(){
+		$("input:checkbox[name=ev_ongelma]:checked").each(function(){
 	       taulukko.push($(this).val());
+        var kerhotoiminta = document.querySelector('input[name= "kerhotoiminta"]:checked').value;
+        var tapahtumat = document.querySelector('input[name= "tapahtumat"]:checked').value;
+        var tutorointi = document.querySelector('input[name= "tutorointi"]:checked').value;
+		var vapaa = document.getElementById('input[name= "vapaa"]:checked').value;
 		
 });
-} 
-document.getElementById("lomake").innerHTML = text;
-</script>
 
+}; 
 </script>
 
 </body>
