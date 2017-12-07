@@ -18,7 +18,7 @@
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <form>
-<h1>Kysely Helgan jäsenyydestä ja palveluista</h1> <hr/>
+    <h1>Kysely Helgan jäsenyydestä ja palveluista</h1> <hr/>
 
     <p>Tämän kyselyn tarkoituksena on kartoittaa Helgan jäsenyyksiä ja tietoisuutta Helgan tarjoamista palveluista.</p>
     
@@ -29,74 +29,74 @@
     <h2>Perustiedot</h2>
     
     Ikä: <br>
-	<input type="radio" name="ika" value="alle20" checked> Alle 20 <br>
-	<input type="radio" name="ika" value="20-25"> 20 - 25 <br>
-  	<input type="radio" name="ika" value="26-30"> 26 - 30 <br>
- 	<input type="radio" name="ika" value="31-35"> 31 - 35 <br>
-	<input type="radio" name="ika" value="yli30"> Yli 35 <hr />
+    <input type="radio" name="ika" value="alle20" checked> Alle 20 <br>
+    <input type="radio" name="ika" value="20-25"> 20 - 25 <br>
+    <input type="radio" name="ika" value="26-30"> 26 - 30 <br>
+    <input type="radio" name="ika" value="31-35"> 31 - 35 <br>
+    <input type="radio" name="ika" value="yli30"> Yli 35 <hr />
     
-	Sukupuoli: <br>
-	<input type="radio" name="sukupuoli" value="mies" checked> Mies <br>
-	<input type="radio" name="sukupuoli" value="nainen"> Nainen <br>
-	<input type="radio" name="sukupuoli" value="muu"> Muu / En halua vastata <hr />
-	
+    Sukupuoli: <br>
+    <input type="radio" name="sukupuoli" value="mies" checked> Mies <br>
+    <input type="radio" name="sukupuoli" value="nainen"> Nainen <br>
+    <input type="radio" name="sukupuoli" value="muu"> Muu / En halua vastata <hr />
+
     Kampus: <br>
-	<input type="radio" name="kampus" value="pasila" checked> Pasila <br>
-	<input type="radio" name="kampus" value="malmi"> Malmi <br>
-  	<input type="radio" name="kampus" value="haaga"> Haaga <br>
-  	<input type="radio" name="kampus" value="porvoo"> Porvoo <br>
-	<input type="radio" name="kampus" value="vierumaki"> Vierumäki <hr />
+    <input type="radio" name="kampus" value="pasila" checked> Pasila <br>
+    <input type="radio" name="kampus" value="malmi"> Malmi <br>
+    <input type="radio" name="kampus" value="haaga"> Haaga <br>
+    <input type="radio" name="kampus" value="porvoo"> Porvoo <br>
+    <input type="radio" name="kampus" value="vierumaki"> Vierumäki <hr />
     
     <h2>Helgan jäsenyys</h2>
     
     Oletko Helgan jäsen: <br>
-	<input type="radio" name="jasenyys" value="kylla" checked> Kyllä <br>
-	<input type="radio" name="jasenyys" value="ei"> Ei <hr />
+    <input type="radio" name="jasenyys" value="kylla" checked> Kyllä <br>
+    <input type="radio" name="jasenyys" value="ei"> Ei <hr />
     
     Koetko hyötyväsi Helgan palveluista: <br>
-	<input type="radio" name="hyoty" value="kylla" checked> Kyllä <br>
-	<input type="radio" name="hyoty" value="ei"> Ei <hr />
+    <input type="radio" name="hyoty" value="kylla" checked> Kyllä <br>
+    <input type="radio" name="hyoty" value="ei"> Ei <hr />
     
     <h2>Helgan palvelut</h2>
     
     Oletko käyttänyt Helgan edunvalvontapalveluita: <br>
-	<input type="radio" name="ev_kaytto" value="kylla" checked> Kyllä <br>
-	<input type="radio" name="ev_kaytto" value="ei"> Ei <hr />
+    <input type="radio" name="evkaytto" value="kylla" checked> Kyllä <br>
+    <input type="radio" name="evkaytto" value="ei"> Ei <hr />
     
     Helgan edunvalvonta tarjoaa apua seuraaviin ongelmiin. <br>
     Oletko viimeisen vuoden aikana törmännyt johonkin seuraavista ongelmista: <br>
-	<input type="checkbox" name="ev_ongelma" value="laatu"> Opetuksen laatu <br>
-	<input type="checkbox" name="ev_ongelma" value="arviointi"> Kurssi arviointi <br>
-	<input type="checkbox" name="ev_ongelma" value="ristiriita"> Ristiriitatilanne henkilöstön kanssa <br>
-  	<input type="checkbox" name="ev_ongelma" value="tyoharjoittelu"> Työharjoittelu <br>
-  	<input type="checkbox" name="ev_ongelma" value="kuormittavuus"> Opintojen kuormittavuus <br>
-  	<input type="checkbox" name="ev_ongelma" value="lasnaolo"> Läsnäolo / Poissaolo <br>
-	<input type="checkbox" name="ev_ongelma" value="opetusteknologia"> Opetusteknologia <hr />
+    <input type="checkbox" list="evongelma" name="laatu" value="laatu"> Opetuksen laatu <br>
+    <input type="checkbox" list="evongelma" name="arviointi" value="arviointi"> Kurssi arviointi <br>
+    <input type="checkbox" list="evongelma" name="ristiriita" value="ristiriita"> Ristiriitatilanne henkilöstön kanssa ><br>
+    <input type="checkbox" list="evongelma" name="tyoharjoittelu" value="tyoharjoittelu"> Työharjoittelu <br>
+    <input type="checkbox" list="evongelma" name="kuormittavuus" value="kuormittavuus"> Opintojen kuormittavuus <br>
+    <input type="checkbox" list="evongelma" name="lasnaolo" value="lasnaolo"> Läsnäolo / Poissaolo <br>
+    <input type="checkbox" list="evongelma" name="opetusteknologia" value="opetusteknologia"> Opetusteknologia <hr />
     
     Oletko tietoinen Helgan kerhotoiminta palveluista: <br>
-	<input type="radio" name="kerhotoiminta" value="kylla" checked> Kyllä <br>
-	<input type="radio" name="kerhotoiminta" value="ei"> Ei <hr />
+    <input type="radio" name="kerhotoiminta" value="kylla" checked> Kyllä <br>
+    <input type="radio" name="kerhotoiminta" value="ei"> Ei <hr />
     
     Kuinka usein käyt opiskelijatapahtumissa: <br>
-	<input type="radio" name="tapahtumat" value="koskaan" checked> En koskaan <br>
-	<input type="radio" name="tapahtumat" value="harvemmin"> Harvemmin kuin kuukausittain <br>
-  	<input type="radio" name="tapahtumat" value="kuukausittain"> Kuukausittain <br>
-  	<input type="radio" name="tapahtumat" value="viikottain"> Viikottain <br>
-	<input type="radio" name="tapahtumat" value="useammin"> Useammin kuin viikottain <hr />
+    <input type="radio" name="tapahtumat" value="koskaan" checked> En koskaan <br>
+    <input type="radio" name="tapahtumat" value="harvemmin"> Harvemmin kuin kuukausittain <br>
+    <input type="radio" name="tapahtumat" value="kuukausittain"> Kuukausittain <br>
+    <input type="radio" name="tapahtumat" value="viikottain"> Viikottain <br>
+    <input type="radio" name="tapahtumat" value="useammin"> Useammin kuin viikottain <hr />
     
     Oletko hyötynyt Helgan tutorointipalveluista: <br>
-	<input type="radio" name="tutorointi" value="ollenkaan" checked> En ollenkaan <br>
-	<input type="radio" name="tutorointi" value="vahan"> Vähän <br>
-  	<input type="radio" name="tutorointi" value="kohtalaisesti"> Kohtalaisesti <br>
-  	<input type="radio" name="tutorointi" value="paljon"> Paljon <br>
-	<input type="radio" name="tutorointi" value="erittain_paljon"> Erittäin paljon <hr />
-	
+    <input type="radio" name="tutorointi" value="ollenkaan" checked> En ollenkaan <br>
+    <input type="radio" name="tutorointi" value="vahan"> Vähän <br>
+    <input type="radio" name="tutorointi" value="kohtalaisesti"> Kohtalaisesti <br>
+    <input type="radio" name="tutorointi" value="paljon"> Paljon <br>
+    <input type="radio" name="tutorointi" value="erittain_paljon"> Erittäin paljon <hr />
+
     Vapaa palaute: 
-	<input type="text" name="vapaa"><hr />
-	
-	<input type="submit" value="Lähetä" onclick="laheta()">
-	<input type="button" value="Näytä vastaukset">
-	<div id="lomake"></div>
+    <input type="text" name="vapaa"><hr />
+
+    <input type="submit" value="Lähetä">
+    <input type="button" value="Näytä vastaukset">
+    <div id="lomake"></div>
 </form>
 
 <script type="text/javascript">
